@@ -8,7 +8,7 @@
 	<groupId>pol-utils</groupId>
 	<artifactId>credit-cards-utils</artifactId>
 	<name>credit-cards-utils</name>
-	<version>0.0.2</version>
+	<version>0.0.1</version>
 	<description>Utilities to manage credit card information such as numbers validation, masking, etc.</description>
 
 

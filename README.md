@@ -1,5 +1,5 @@
 # credit-cards-utils 
-TODO: Write a project description.
+Utilities to manage credit card information such as numbers validation, masking, etc.
  
 ## Installation
 
@@ -19,7 +19,18 @@ compile(group: 'com.payulatam', name: 'creditcard-gatekeeper', version: '1.0.0')
 
 ## Usage
 
-TODO: Write usage instructions
+Write usage instructions
+
+1. Mask a credit card number:
+
+```java 
+	String number = "4123412341235321";
+	String masked = CreditCardFormatUtils.mask(number);
+	Assert.assertEquals("412341******5321", masked);
+```java 
+
+2. Validate a security code
+
 
 ## Contributing
 
