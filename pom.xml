@@ -53,14 +53,12 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<scope>compile</scope>
-			<version>3.2.4.RELEASE</version>
+			<version>4.3.17.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>3.2.4.RELEASE</version>
-			<scope>compile</scope>
+			<version>4.3.17.RELEASE</version>
 		</dependency>
 		<!-- Test -->
 		<dependency>
