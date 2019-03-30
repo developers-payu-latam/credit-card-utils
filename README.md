@@ -27,11 +27,31 @@ Write usage instructions
 	String number = "4123412341235321";
 	String masked = CreditCardFormatUtils.mask(number);
 	Assert.assertEquals("412341******5321", masked);
-```java 
+``` 
 
 2. Validate a security code
 
+```java 
+	# 4 digits  cvv2 for Amex Argentina is ok
+	CreditCardValidator.validateSecurityCode("1231", CreditCardType.AMEX, CreditCardCountry.AR.name());
 
+	# 3 digits cvv2 for Amex Argentina is not ok
+	CreditCardValidator.validateSecurityCode("", CreditCardType.AMEX, CreditCardCountry.PE.name());
+	Assert.p fail("is not valid");
+```
+
+3. Validate pan with franchise
+
+```java 
+	# Valid Mastercard pan
+	String pan  = "2221000010000015";
+    CreditCardValidator.validate(pan, CreditCardType.MASTERCARD);
+
+	# Invalid Mastercard pan
+	String number = "5105105105105101";
+	CreditCardType creditCardType = CreditCardType.MASTERCARD;
+	Assert.p fail("is not valid");
+```
 ## Contributing
 
 1. Clone it!
